@@ -6,7 +6,28 @@
   <!-- Scrip header -->
   <header id="app-header"></header>
   <script async src="header.js"></script>  
+  <!--Flecha subir-->
+  <a href="" id="btn-scroll-top"> <img src="up-arrow.png" width="50" height="50"> </a>
+  <script>
+    window.addEventListener('scroll', function() {
+      var btnScrollTop = document.getElementById('btn-scroll-top');
   
+      // Muestra u oculta el botón de acuerdo a la posición del scroll
+      if (window.pageYOffset > 300) {
+        btnScrollTop.style.display = 'block';
+      } else {
+        btnScrollTop.style.display = 'none';
+      }
+    });
+  
+    // Función para desplazarse hacia arriba al hacer clic en el botón
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
   
   <link rel="stylesheet" type="text/css" href="style.css">
   
