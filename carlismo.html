@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Amadeo I</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Scrip header -->
+    <header id="app-header"></header>
+    <script async src="header.js"></script>  
+
+  <!--Flecha subir-->
+  <a href="" id="btn-scroll-top"> <img src="media/up-arrow.png" width="50" height="50"> </a>
+  <script>
+    window.addEventListener('scroll', function() {
+      var btnScrollTop = document.getElementById('btn-scroll-top');
+  
+      // Muestra u oculta el botón de acuerdo a la posición del scroll
+      if (window.pageYOffset > 300) {
+        btnScrollTop.style.display = 'block';
+      } else {
+        btnScrollTop.style.display = 'none';
+      }
+    });
+  
+    // Función para desplazarse hacia arriba al hacer clic en el botón
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</head>
+<body>
+  <div id="cartas" class="card-container">
+
+    <a href="medallas_html/fernandoVII/bailen.html">
+      <div class="card">
+        <img src="media/fernandodVII/bailenAnv.jpg" alt="Medalla de Bailén">
+        <h3>Medalla de Bailén</h3>
+      </div>
+    </a>
+	<a href="medallas_html/fernandoVII/cruzZapadores.html">
+      <div class="card">
+        <img src="media/fernandodVII/cruzZapadoresAnv.jpg" alt="Cruz de la Fuga de los Zapadores">
+        <h3>Cruz de la Fuga de los Zapadores</h3>
+      </div>
+    </a>
+	<a href="medallas_html/fernandoVII/cruzML.html">
+      <div class="card">
+        <img src="media/fernandodVII/cruzMLAnv.jpg" alt="Cruz de María Luisa">
+        <h3>Cruz de María Luisa</h3>
+      </div>
+    </a>
+    
+  </div>
+
+        <!-- Scrip footer -->
+  <footer id="app-footer"></footer>
+  <script async src="footer.js"></script>  
+    </body>
+
+</html>

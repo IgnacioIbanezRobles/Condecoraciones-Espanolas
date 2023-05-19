@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Juan Carlos I</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Scrip header -->
+    <header id="app-header"></header>
+    <script async src="header.js"></script>  
+
+  <!--Flecha subir-->
+  <a href="" id="btn-scroll-top"> <img src="media/up-arrow.png" width="50" height="50"> </a>
+  <script>
+    window.addEventListener('scroll', function() {
+      var btnScrollTop = document.getElementById('btn-scroll-top');
+  
+      // Muestra u oculta el botón de acuerdo a la posición del scroll
+      if (window.pageYOffset > 300) {
+        btnScrollTop.style.display = 'block';
+      } else {
+        btnScrollTop.style.display = 'none';
+      }
+    });
+  
+    // Función para desplazarse hacia arriba al hacer clic en el botón
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</head>
+<body>
+   <div class="desc-card">
+    <h2>Juan Carlos I (1975-2014)</h2>
+
+      <p>
+ 	 Con la proclamación del Rey Juan Carlos I y la llegada posterior de la democracia, los símbolos del periodo anterior fueron cambiando a los actuales. La corona real abierta (llamada también imperial) fue sustituida por la corona real cerrada en 1977, sin embargo en las cruces de la Orden del Merito Militar se conservó en el escusón central la granada, cuando hubiera sido mejor colocar en su lugar las lises  de la dinastía. En 1981 se cambia el escudo nacional y no será hasta 2003 cuando aparecen las lises en los escusones de la Mérito Mílitar. Es de destacar la progresiva pérdida de calidad de las condecoraciones.
+   	</p>
+
+   </div>
+  <div id="cartas" class="card-container">
+
+    <a href="medallas_html/juanCarlosI/cruzRojaMM.html">
+      <div class="card">
+        <img src="media/juanCarlosI/.jpg" alt="Cruz Roja del Mérito Militar">
+        <h3>Cruz Roja del Mérito Militar</h3>
+      </div>
+    </a>
+    <a href="medallas_html/juanCarlosI/MEjercitoNavalAerea.html">
+      <div class="card">
+        <img src="media/juanCarlosI/MEjercitoNavalAereaAnv.jpg" alt="Medalla del Ejército, Naval y Aérea">
+        <h3>Medalla del Ejército, Naval y Aérea</h3>
+      </div>
+    </a>
+	  <a href="medallas_html/juanCarlosI/OMMBlanco.html">
+      <div class="card">
+        <img src="media/juanCarlosI/MMBAnv.jpg" alt="Orden del Mérito Militar, Naval o Aeronáutico con distintivo blanco">        
+        <h3>Orden del Mérito Militar, Naval o Aeronáutico con distintivo blanco</h3>
+      </div>
+    </a>
+    <a href="medallas_html/juanCarlosI/OrdenMeritoGC.html">
+      <div class="card">
+        <img src="media/juanCarlosI/OMGCAnv.jpg" alt="Orden del Mérito de la Guardia Civil">        
+        <h3>Orden del Mérito de la Guardia Civil</h3>
+      </div>
+    </a>
+    <a href="medallas_html/juanCarlosI/MMutilado.html">
+      <div class="card">
+        <img src="media/juanCarlosI/MMutilado.jpg" alt="Medalla del Mutilado">        
+        <h3>Medalla del Mutilado</h3>
+      </div>
+    </a>
+    <a href="medallas_html/juanCarlosI/MSahara.html">
+      <div class="card">
+        <img src="media/juanCarlosI/medallaSahara.jpg" alt="Medalla del Sáhara">        
+        <h3>Medalla del Sáhara</h3>
+      </div>
+    </a>
+    <a href="medallas_html/juanCarlosI/reglamentoCruzConstancia.html">
+      <div class="card">
+        <img src="media/juanCarlosI/cruzConstanciaAnv.jpg" alt="Nuevo reglamento de la Cruz a la Constancia">        
+        <h3>Nuevo reglamento de la Cruz a la Constancia</h3>
+      </div>
+    </a>
+    <a href="medallas_html/juanCarlosI/reglamentoCruzMM.html">
+      <div class="card">
+        <img src="media/juanCarlosI/.jpg" alt="Nuevo Reglamento de la Cruz Mérito Militar, Naval y Aeronáutico">        
+        <h3>Nuevo Reglamento de la Cruz Mérito Militar, Naval y Aeronáutico</h3>
+      </div>
+    </a>
+    <a href="medallas_html/juanCarlosI/mMIndividual.html">
+      <div class="card">
+        <img src="media/juanCarlosI/MMIAnv.jpg" alt="Nuevo Reglamento de la medalla militar individual">        
+        <h3>Nuevo Reglamento de la medalla militar individual</h3>
+      </div>
+    </a>
+    
+  </div>
+
+        <!-- Scrip footer -->
+  <footer id="app-footer"></footer>
+  <script async src="footer.js"></script>  
+    </body>
+
+</html>

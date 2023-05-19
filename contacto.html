@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto</title>
+  <!-- Scrip header -->
+  <header id="app-header"></header>
+  <script async src="header.js"></script>  
+  
+  <!--Flecha subir-->
+  <a href="" id="btn-scroll-top"> <img src="media/up-arrow.png" width="50" height="50"> </a>
+  <script>
+    window.addEventListener('scroll', function() {
+      var btnScrollTop = document.getElementById('btn-scroll-top');
+  
+      // Muestra u oculta el botón de acuerdo a la posición del scroll
+      if (window.pageYOffset > 300 || window.pageYOffset == 0) {
+        btnScrollTop.style.display = 'block';
+      } else {
+        btnScrollTop.style.display = 'none';
+      }
+    });
+  
+    // Función para desplazarse hacia arriba al hacer clic en el botón
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulario de Contacto</h1>
+        <form action="enviar_formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+        
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+        
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+  <!-- Scrip footer -->
+  <footer id="app-footer"></footer>
+  <script async src="footer.js"></script>  
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Fernando VII</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Scrip header -->
+    <header id="app-header"></header>
+    <script async src="header.js"></script>  
+
+  <!--Flecha subir-->
+  <a href="" id="btn-scroll-top"> <img src="media/up-arrow.png" width="50" height="50"> </a>
+  <script>
+    window.addEventListener('scroll', function() {
+      var btnScrollTop = document.getElementById('btn-scroll-top');
+  
+      // Muestra u oculta el botón de acuerdo a la posición del scroll
+      if (window.pageYOffset > 300) {
+        btnScrollTop.style.display = 'block';
+      } else {
+        btnScrollTop.style.display = 'none';
+      }
+    });
+  
+    // Función para desplazarse hacia arriba al hacer clic en el botón
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</head>
+<body>
+  <div class="desc-card">
+    <h2>Fernando VII (1808-1833)</h2>
+      <p>
+        Aunque su reinado comienza en 1808, se puede decir que realmente se inicia en 1814, al finalizar la Guerra de Independencia. Al terminar la guerra son innumerables las condecoraciones (medallas, cruces y escudos de distinción) para recompensar a los que actuaron em las batallas o acciones ocurridas en ellas. También se crean la Real y Militar Orden de San Fernando en 1811 y en 1814 la Real y Militar Orden de San Hermenegildo, además la medalla de distinción de los prisioneros militares.
+   	  </p>
+  </div>
+
+  <div id="cartas" class="card-container">
+
+    <a href="medallas_html/fernandoVII/medallaBailen.html">
+        <div class="card">
+          <img src="media/fernandoVII/bailen.jpg" alt="Medalla de Bailén">
+          <h3>Medalla de Bailén</h3>
+        </div>
+      </a>
+    <a href="medallas_html/fernandoVII/cruzZapadores.html">
+        <div class="card">
+          <img src="media/fernandoVII/fugaMadrid.jpg" alt="Cruz de la Fuga de los Zapadores">
+          <h3>Cruz de la Fuga de los Zapadores</h3>
+        </div>
+      </a>
+    <a href="medallas_html/fernandoVII/cruzML.html">
+        <div class="card">
+          <img src="media/fernandoVII/cruzMLAnv.jpg" alt="Cruz de María Luisa">
+          <h3>Cruz de María Luisa</h3>
+        </div>
+      </a>
+    
+  </div>
+
+        <!-- Scrip footer -->
+  <footer id="app-footer"></footer>
+  <script async src="footer.js"></script>  
+    </body>
+
+</html>
