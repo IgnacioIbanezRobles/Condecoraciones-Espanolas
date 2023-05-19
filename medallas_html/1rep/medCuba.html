@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="medallas, condecoraciones, españolas">
+  <title>Medalla de Cuba</title>
+  <link rel="stylesheet" type="text/css" href="../../style.css">
+  
+  <!-- Scrip header -->
+  <header id="app-header"></header>
+  <script async src="../../header_medalla.js"></script>  
+
+  <!--Flecha subir-->
+  <a href="" id="btn-scroll-top"> <img src="../../media/up-arrow.png" width="50" height="50"> </a>
+  <script>
+    window.addEventListener('scroll', function() {
+      var btnScrollTop = document.getElementById('btn-scroll-top');
+  
+      // Muestra u oculta el botón de acuerdo a la posición del scroll
+      if (window.pageYOffset > 300) {
+        btnScrollTop.style.display = 'block';
+      } else {
+        btnScrollTop.style.display = 'none';
+      }
+    });
+  
+    // Función para desplazarse hacia arriba al hacer clic en el botón
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</head>
+<body>
+  
+  
+  <div class="desc-card">
+    <!--Título-->
+    <h2>Medalla de Cuba</h2>
+    <!--Descripcion-->
+    <div class="desc">
+      <p>
+        Sustituye a la de Amadeo I. Decreto de 27 de junio de 1873. De palta, de forma romboidal y a sus lados ramas de laurel y palmas. En el anverso matrona con escudo nacional y las columnas de Hércules  y la leyenda “Campaña de Cuba”. En el reverso “España al valiente Ejército que pelea en defensa de la Patria” y “1873”. Cuelga de corona mural y cinta roja con franja negra.
+      </p>
+    </div>
+    <div class="desc-img">
+      <img src="../../media/1rep/cubaAnv.jpg" alt="Medalla de Cuba anverso">
+      <img src="../../media/1rep/cubaRev.jpg" alt="Medalla de Cuba reverso">
+  
+    </div> 
+  </div>
+  
+  
+  
+  <!-- Scrip footer -->
+  <footer id="app-footer"></footer>
+  <script async src="../../footer.js"></script>  
+
+</body>
+</html>
+
