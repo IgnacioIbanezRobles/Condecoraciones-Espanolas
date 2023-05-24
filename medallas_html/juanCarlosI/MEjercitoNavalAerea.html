@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="medallas, condecoraciones, españolas">
+  <title>Medalla del Ejército, Naval y Aérea</title>
+  <link rel="stylesheet" type="text/css" href="../../style.css">
+  
+  <!-- Scrip header -->
+  <header id="app-header"></header>
+  <script async src="../../header_medalla.js"></script>  
+
+  <!--Flecha subir-->
+  <a href="" id="btn-scroll-top"> <img src="../../media/up-arrow.png" width="50" height="50"> </a>
+  <script>
+    window.addEventListener('scroll', function() {
+      var btnScrollTop = document.getElementById('btn-scroll-top');
+  
+      // Muestra u oculta el botón de acuerdo a la posición del scroll
+      if (window.pageYOffset > 300) {
+        btnScrollTop.style.display = 'block';
+      } else {
+        btnScrollTop.style.display = 'none';
+      }
+    });
+  
+    // Función para desplazarse hacia arriba al hacer clic en el botón
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</head>
+<body>
+  
+  
+  <div class="desc-card">
+    <!--Título-->
+    <h2>Medalla del Ejército, Naval y Aérea</h2>
+    <!--Descripcion-->
+    <div class="desc">
+      <p>
+        Reglamento de 5 de marzo de 1976. Son las 3 ovaladas de hierro oxidado con ramas de laurel y leones a ambos lados. En el anverso matrona y escrito “AL MERITO EN EL EJERCITO” (o AL MERITO NAVAL, O AL MERITO AEREO) y 1970. En el reverso Escudo del Ejercito (con la corona imperial). (o 2 anclas o emblema del Ejército del Aire). Cinta con los colores nacionales y en los cantos verde , azul marino o azul celeste.
+      </p>
+    </div>
+    <div class="desc-img">
+      <img src="../../media/juanCarlosI/.jpg" alt="Medalla del Ejército, Naval y Aérea anverso">
+  
+    </div> 
+  </div>
+  
+  
+  
+  <!-- Scrip footer -->
+  <footer id="app-footer"></footer>
+  <script async src="../../footer.js"></script>  
+
+</body>
+</html>
+

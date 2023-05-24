@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Medalla de los Voluntarios de Cuba</title>
+  <link rel="stylesheet" type="text/css" href="../../style.css">
+  
+  <!-- Scrip header -->
+  <header id="app-header"></header>
+  <script async src="../../header_medalla.js"></script>  
+
+  <!--Flecha subir-->
+  <a href="" id="btn-scroll-top"> <img src="../../media/up-arrow.png" width="50" height="50"> </a>
+  <script>
+    window.addEventListener('scroll', function() {
+      var btnScrollTop = document.getElementById('btn-scroll-top');
+  
+      // Muestra u oculta el botón de acuerdo a la posición del scroll
+      if (window.pageYOffset > 300) {
+        btnScrollTop.style.display = 'block';
+      } else {
+        btnScrollTop.style.display = 'none';
+      }
+    });
+  
+    // Función para desplazarse hacia arriba al hacer clic en el botón
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</head>
+<body>
+  
+  
+  <div class="desc-card">
+    <!--Título-->
+    <h2>Medalla de los Voluntarios de Cuba</h2>
+    <!--Descripcion-->
+    <div class="desc">
+      <p>
+        Real Decreto de 10 de noviembre de 1871. Para premiar a los voluntarios del Ejercito de Cuba. Ovalada, de plata, elíptica con ramas de roble y palma, corona Real. Anverso busto del Rey con la inscripción “Amadeo 1º de España a los voluntarios de la isla de Cuba”, reverso escudos de España y Cuba, leyenda: “Defensores de la honra y de la integridad nacional” y “1871” de Cinta roja y cantos y 3 listas amarillas.
+      </p>
+    </div>
+    <div class="desc-img">
+      <img src="../../media/amadeoI/volCubaAnv.jpg" alt="Medalla de los Voluntarios de Cuba anverso">
+      <img src="../../media/amadeoI/volCubaRev.jpg" alt="Medalla de los Voluntarios de Cuba reverso">
+    </div> 
+  </div>
+  
+  <!-- Scrip footer -->
+  <footer id="app-footer"></footer>
+  <script async src="../../footer.js"></script>  
+
+</body>
+</html>
+
+    <p class="description">
+        
+    </p>
+</body>
+</html>

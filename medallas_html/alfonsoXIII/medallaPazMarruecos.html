@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="medallas, condecoraciones, españolas">
+  <title>Medalla de la Paz de Marruecos</title>
+  <link rel="stylesheet" type="text/css" href="../../style.css">
+  
+  <!-- Scrip header -->
+  <header id="app-header"></header>
+  <script async src="../../header_medalla.js"></script>  
+
+  <!--Flecha subir-->
+  <a href="" id="btn-scroll-top"> <img src="../../media/up-arrow.png" width="50" height="50"> </a>
+  <script>
+    window.addEventListener('scroll', function() {
+      var btnScrollTop = document.getElementById('btn-scroll-top');
+  
+      // Muestra u oculta el botón de acuerdo a la posición del scroll
+      if (window.pageYOffset > 300) {
+        btnScrollTop.style.display = 'block';
+      } else {
+        btnScrollTop.style.display = 'none';
+      }
+    });
+  
+    // Función para desplazarse hacia arriba al hacer clic en el botón
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</head>
+<body>
+  
+  
+  <div class="desc-card">
+    <!--Título-->
+    <h2>Medalla de la Paz de Marruecos</h2>
+    <!--Descripcion-->
+    <div class="desc">
+      <p>
+        Creada por Real Decreto de 21 de septiembre de 1927. De hierro con paloma y corona real. En el anverso un paisaje de Marruecos y leyendas de “Paz” y “1909-1927”. Reverso con un alarga cita. Cinta blanca con franjas con lo colores nacionales y franja verde. Es una condecoración hereditaria, pudiendo solicitarse hasta 2003 que fue derogada.
+      </p>
+    </div>
+    <div class="desc-img">
+        <img src="../../media/alfonsoXIII/pazMarruecosAnv.jpg" alt="Medalla de la Paz de Marruecos anverso">
+        <img src="../../media/alfonsoXIII/pazMarruecosRev.jpg" alt="Medalla de la Paz de Marruecos reverso">
+        
+  
+    </div> 
+  </div>
+  
+  
+  
+  <!-- Scrip footer -->
+  <footer id="app-footer"></footer>
+  <script async src="../../footer.js"></script>  
+
+</body>
+</html>

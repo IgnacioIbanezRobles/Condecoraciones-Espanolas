@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Medalla de los voluntarios a la libertad</title>
+  <link rel="stylesheet" type="text/css" href="../../style.css">
+  
+  <!-- Scrip header -->
+  <header id="app-header"></header>
+  <script async src="../../header_medalla.js"></script>  
+
+  <!--Flecha subir-->
+  <a href="" id="btn-scroll-top"> <img src="../../media/up-arrow.png" width="50" height="50"> </a>
+  <script>
+    window.addEventListener('scroll', function() {
+      var btnScrollTop = document.getElementById('btn-scroll-top');
+  
+      // Muestra u oculta el botón de acuerdo a la posición del scroll
+      if (window.pageYOffset > 300) {
+        btnScrollTop.style.display = 'block';
+      } else {
+        btnScrollTop.style.display = 'none';
+      }
+    });
+  
+    // Función para desplazarse hacia arriba al hacer clic en el botón
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</head>
+<body>
+  
+  
+  <div class="desc-card">
+    <!--Título-->
+    <h2>Medalla de los voluntarios a la libertad</h2>
+    <!--Descripcion-->
+    <div class="desc">
+      <p>
+        Decreto Mº Gobernación de 6 de mayo de 1871. Cruz de Saboya sobre 4 espadas y cinta blana con la leyenda "AMADEO I A LOS VOLUNTARIOS DE LA LIBERTAD" o "AMADEO I A LA MILICIA CIUDADANA". En el reverso "29 SETbre1868-29 ENERO 1871".
+      </p>
+    </div>
+    <div class="desc-img">
+      <img src="../../media/amadeoI/volLibertadAnv.jpg" alt="Medalla de los voluntarios a la libertad anverso">
+      <img src="../../media/amadeoI/volLibertadRev.jpg" alt="Medalla de los voluntarios a la libertad reverso">
+    </div> 
+  </div>
+  
+  <!-- Scrip footer -->
+  <footer id="app-footer"></footer>
+  <script async src="../../footer.js"></script>  
+
+</body>
+</html>
+
+    <p class="description">
+        
+    </p>
+</body>
+</html>

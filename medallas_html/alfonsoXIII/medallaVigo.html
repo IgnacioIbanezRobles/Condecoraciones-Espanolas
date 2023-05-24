@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="medallas, condecoraciones, españolas">
+  <title>Medalla de Vigo</title>
+  <link rel="stylesheet" type="text/css" href="../../style.css">
+  
+  <!-- Scrip header -->
+  <header id="app-header"></header>
+  <script async src="../../header_medalla.js"></script>  
+
+  <!--Flecha subir-->
+  <a href="" id="btn-scroll-top"> <img src="../../media/up-arrow.png" width="50" height="50"> </a>
+  <script>
+    window.addEventListener('scroll', function() {
+      var btnScrollTop = document.getElementById('btn-scroll-top');
+  
+      // Muestra u oculta el botón de acuerdo a la posición del scroll
+      if (window.pageYOffset > 300) {
+        btnScrollTop.style.display = 'block';
+      } else {
+        btnScrollTop.style.display = 'none';
+      }
+    });
+  
+    // Función para desplazarse hacia arriba al hacer clic en el botón
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</head>
+<body>
+  
+  
+  <div class="desc-card">
+    <!--Título-->
+    <h2>Medalla de Vigo</h2>
+    <!--Descripcion-->
+    <div class="desc">
+      <p>
+        Real Decreto de 2 de agosto de 1914. Circular, de bronce con una pequeña corona real. Anverso con el castillo de la ciudad y ramos de palmas  y laurel y el lema “Primer centenario de la Independencia”. Reverso con la puerta de Gamboa y su derribo, con el lema “Reconquista de la fiel, leal y valerosa ciudad de Vigo”. Cinta blanca con los colores nacionales en el centro. 
+      </p>
+    </div>
+    <div class="desc-img">
+        <img src="../../media/alfonsoXIII/medallaVigoAnv.jpg" alt="Medalla de Vigo anverso">
+        <img src="../../media/alfonsoXIII/medallaVigoRev.jpg" alt="Medalla de Vigo reverso">
+    </div>
+
+  </div>
+  
+  
+  
+  <!-- Scrip footer -->
+  <footer id="app-footer"></footer>
+  <script async src="../../footer.js"></script>  
+
+</body>
+</html>

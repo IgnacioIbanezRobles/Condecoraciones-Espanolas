@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="medallas, condecoraciones, españolas">
+  <title>Medalla de Alfonso XII</title>
+  <link rel="stylesheet" type="text/css" href="../../style.css">
+  
+  <!-- Scrip header -->
+  <header id="app-header"></header>
+  <script async src="../../header_medalla.js"></script>  
+
+  <!--Flecha subir-->
+  <a href="" id="btn-scroll-top"> <img src="../../media/up-arrow.png" width="50" height="50"> </a>
+  <script>
+    window.addEventListener('scroll', function() {
+      var btnScrollTop = document.getElementById('btn-scroll-top');
+  
+      // Muestra u oculta el botón de acuerdo a la posición del scroll
+      if (window.pageYOffset > 300) {
+        btnScrollTop.style.display = 'block';
+      } else {
+        btnScrollTop.style.display = 'none';
+      }
+    });
+  
+    // Función para desplazarse hacia arriba al hacer clic en el botón
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</head>
+<body>
+  
+  
+  <div class="desc-card">
+    <!--Título-->
+    <h2>Medalla de Alfonso XII</h2>
+    <!--Descripcion-->
+    <div class="desc">
+      <p>
+        Real Decreto de 8 de Septiembre de 1875. Circular de plata con una anilla horizontal. Anverso busto del monarca y la cita "Alfonso XII a los ejercitos en operaciones". Reverso con corona real y orla de laurel y "Valor disciplina y lealtad". Pasadores de las acciones. 
+      </p>
+    </div>
+    <div class="desc-img">
+      <img src="../../media/alfonsoXII/medallaAlfonsoXIIAnv.jpg" alt="Medalla de Alfonso XII anverso">
+      <img src="../../media/alfonsoXII/medallaAlfonsoXIIRev.jpg" alt="Medalla de Alfonso XII reverso">
+    </div> 
+  </div>
+  
+  
+  
+  <!-- Scrip footer -->
+  <footer id="app-footer"></footer>
+  <script async src="../../footer.js"></script>  
+
+</body>
+</html>
+

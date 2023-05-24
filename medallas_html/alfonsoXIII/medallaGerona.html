@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="medallas, condecoraciones, españolas">
+  <title>Medalla de Gerona</title>
+  <link rel="stylesheet" type="text/css" href="../../style.css">
+  
+  <!-- Scrip header -->
+  <header id="app-header"></header>
+  <script async src="../../header_medalla.js"></script>  
+
+  <!--Flecha subir-->
+  <a href="" id="btn-scroll-top"> <img src="../../media/up-arrow.png" width="50" height="50"> </a>
+  <script>
+    window.addEventListener('scroll', function() {
+      var btnScrollTop = document.getElementById('btn-scroll-top');
+  
+      // Muestra u oculta el botón de acuerdo a la posición del scroll
+      if (window.pageYOffset > 300) {
+        btnScrollTop.style.display = 'block';
+      } else {
+        btnScrollTop.style.display = 'none';
+      }
+    });
+  
+    // Función para desplazarse hacia arriba al hacer clic en el botón
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</head>
+<body>
+  
+  
+  <div class="desc-card">
+    <!--Título-->
+    <h2>Medalla de Gerona</h2>
+    <!--Descripcion-->
+    <div class="desc">
+      <p>
+        Real Decreto de 28 de enero de 1910. Placa cuadrada en diagonal, en tres categorías.  Oro, plata y bronce. Anverso con cruz y 4 castillos y en su centro San Narciso el Santo de la ciudad. En el reverso igual cruz y castillos y en el centro “Primer centenario 1909”. Cinta para descendientes blanca y en su centro los colores nacionales. Para el resto cantos morados.
+      </p>
+    </div>
+    <div class="desc-img">
+        <img src="../../media/alfonsoXIII/medallaGeronaAnv.jpg" alt="Medalla de Gerona anverso">
+        <img src="../../media/alfonsoXIII/medallaGeronaRev.jpg" alt="Medalla de Gerona reverso">
+    </div>
+
+  </div>
+  
+  
+  
+  <!-- Scrip footer -->
+  <footer id="app-footer"></footer>
+  <script async src="../../footer.js"></script>  
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="medallas, condecoraciones, españolas">
+  <title>Medalla de Puente de Sampayo</title>
+  <link rel="stylesheet" type="text/css" href="../../style.css">
+  
+  <!-- Scrip header -->
+  <header id="app-header"></header>
+  <script async src="../../header_medalla.js"></script>  
+
+  <!--Flecha subir-->
+  <a href="" id="btn-scroll-top"> <img src="../../media/up-arrow.png" width="50" height="50"> </a>
+  <script>
+    window.addEventListener('scroll', function() {
+      var btnScrollTop = document.getElementById('btn-scroll-top');
+  
+      // Muestra u oculta el botón de acuerdo a la posición del scroll
+      if (window.pageYOffset > 300) {
+        btnScrollTop.style.display = 'block';
+      } else {
+        btnScrollTop.style.display = 'none';
+      }
+    });
+  
+    // Función para desplazarse hacia arriba al hacer clic en el botón
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</head>
+<body>
+  
+  
+  <div class="desc-card">
+    <!--Título-->
+    <h2>Medalla de Puente de Sampayo</h2>
+    <!--Descripcion-->
+    <div class="desc">
+      <p>
+        Real Orden de 13 de mayo de 1909. Circular con corona pequeña, en tres categorías: oro, plata y bronce. Anverso con el Busto del General Morillo y “Pablo Morillo Defensor heroico del Puente Sampayo. Primer centenario de la Independencia. Año 1909”. En el reverso puente destruidoy “Puente Sampayo 7 y 8 de junio de 1809” Cinta blanca y diagonal azul.
+      </p>
+    </div>
+    <div class="desc-img">
+        <img src="../../media/alfonsoXIII/sampayoAnv.jpg" alt="Medalla de Puente de Sampayo anverso">
+        <img src="../../media/alfonsoXIII/sampayoRev.jpg" alt="Medalla de Puente de Sampayo reverso">
+    </div>
+  </div>
+  
+  
+  
+  <!-- Scrip footer -->
+  <footer id="app-footer"></footer>
+  <script async src="../../footer.js"></script>  
+
+</body>
+</html>

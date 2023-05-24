@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="medallas, condecoraciones, españolas">
+  <title>Ampliación de la Cruz de María Isabel Luisa</title>
+  <link rel="stylesheet" type="text/css" href="../../style.css">
+  
+  <!-- Scrip header -->
+  <header id="app-header"></header>
+  <script async src="../../header_medalla.js"></script>  
+
+  <!--Flecha subir-->
+  <a href="" id="btn-scroll-top"> <img src="../../media/up-arrow.png" width="50" height="50"> </a>
+  <script>
+    window.addEventListener('scroll', function() {
+      var btnScrollTop = document.getElementById('btn-scroll-top');
+  
+      // Muestra u oculta el botón de acuerdo a la posición del scroll
+      if (window.pageYOffset > 300) {
+        btnScrollTop.style.display = 'block';
+      } else {
+        btnScrollTop.style.display = 'none';
+      }
+    });
+  
+    // Función para desplazarse hacia arriba al hacer clic en el botón
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</head>
+<body>
+  
+  
+  <div class="desc-card">
+    <!--Título-->
+    <h2>Ampliación de la Cruz de María Isabel Luisa</h2>
+    <!--Descripcion-->
+    <div class="desc">
+      <p>
+        Por Real Orden de 19 de marzo de 1839, para los oficiales que anteriormente tenían concedida la de plata de tropa. Cruz Similar pero esmaltada en blanco con el centro el busto de la Reina. La cinta continúa siendo azul celeste
+      </p>
+    </div>
+    <div class="desc-img">
+        <img src="../../media/isabelII/cruzMILAnv.jpg" alt="Ampliación de la Cruz de María Isabel Luisa anverso">
+        <img src="../../media/isabelII/cruzMILRev.jpg" alt="Ampliación de la Cruz de María Isabel Luisa reverso">
+    </div> 
+  </div>
+  
+  
+  
+  <!-- Scrip footer -->
+  <footer id="app-footer"></footer>
+  <script async src="../../footer.js"></script>  
+
+</body>
+</html>

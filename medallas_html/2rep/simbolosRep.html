@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="medallas, condecoraciones, españolas">
+  <title>Retirada de los símbolos monárquicos</title>
+  <link rel="stylesheet" type="text/css" href="../../style.css">
+  
+  <!-- Scrip header -->
+  <header id="app-header"></header>
+  <script async src="../../header_medalla.js"></script>  
+
+  <!--Flecha subir-->
+  <a href="" id="btn-scroll-top"> <img src="../../media/up-arrow.png" width="50" height="50"> </a>
+  <script>
+    window.addEventListener('scroll', function() {
+      var btnScrollTop = document.getElementById('btn-scroll-top');
+  
+      // Muestra u oculta el botón de acuerdo a la posición del scroll
+      if (window.pageYOffset > 300) {
+        btnScrollTop.style.display = 'block';
+      } else {
+        btnScrollTop.style.display = 'none';
+      }
+    });
+  
+    // Función para desplazarse hacia arriba al hacer clic en el botón
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</head>
+<body>
+  
+  <div class="desc-card">
+    <!--Título-->
+    <h2>Retirada de los símbolos monárquicos</h2>
+    <!--Descripcion-->
+    <div class="desc">
+      <p>
+        Se sustituyen las condecoraciones que aparezca la efigie real, lises y corona real. Esta última se sustituye por corona mural, Las cintas y escudos se sustituyen por republicanos. En algunos casos se suprimen ciertas condecoraciones el 19 de noviembre de 1931, para posteriormente ser restauradas su uso por Orden Circular de 24 de noviembre de 1931.
+      </p>
+    </div>
+    <div class="desc-img">
+        <img src="../../media/2rep/MMPlataAnv.jpg" alt="">
+        <img src="../../media/2rep/MMPlataRev.jpg" alt="">
+    </div> 
+  </div>
+  
+  <!-- Scrip footer -->
+  <footer id="app-footer"></footer>
+  <script async src="../../footer.js"></script>  
+
+</body>
+</html>

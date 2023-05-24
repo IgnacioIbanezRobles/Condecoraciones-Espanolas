@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="medallas, condecoraciones, españolas">
+  <title>Cruces del Mérito Militar y Naval</title>
+  <link rel="stylesheet" type="text/css" href="../../style.css">
+  
+  <!-- Scrip header -->
+  <header id="app-header"></header>
+  <script async src="../../header_medalla.js"></script>  
+
+  <!--Flecha subir-->
+  <a href="" id="btn-scroll-top"> <img src="../../media/up-arrow.png" width="50" height="50"> </a>
+  <script>
+    window.addEventListener('scroll', function() {
+      var btnScrollTop = document.getElementById('btn-scroll-top');
+  
+      // Muestra u oculta el botón de acuerdo a la posición del scroll
+      if (window.pageYOffset > 300) {
+        btnScrollTop.style.display = 'block';
+      } else {
+        btnScrollTop.style.display = 'none';
+      }
+    });
+  
+    // Función para desplazarse hacia arriba al hacer clic en el botón
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</head>
+<body>
+  
+  
+  <div class="desc-card">
+    <!--Título-->
+    <h2>Cruces del Mérito Militar</h2>
+    <!--Descripcion-->
+    <div class="desc">
+      <p>
+        Continúan siendo iguales que las del reinado anterior. Aparecen pasadores con “Profesorado” y “Industria Militar”.
+      </p>
+    </div>
+    <div class="desc-img">
+        <img src="../../media/alfonsoXIII/cruzMMRojoAnv.jpg" alt="Cruces del Mérito Militar anverso">
+        <img src="../../media/alfonsoXIII/cruzMMRojoRev.jpg" alt="Cruces del Mérito Militar reverso">
+    </div>
+    <div class="desc-img">
+        <img src="../../media/alfonsoXIII/cruzMMRojoPensionadaAnv.jpg" alt="Cruces del Mérito Militar anverso">
+        <img src="../../media/alfonsoXIII/cruzMMRojoPensionadaRev.jpg" alt="Cruces del Mérito Militar reverso">
+    </div>
+    <h2>Cruces del Mérito Naval</h2>
+    <div class="desc-img">
+        <img src="../../media/alfonsoXIII/cruzMeritoNavalRojoAnv.jpg" alt="Cruces del Mérito Naval anverso">
+        <img src="../../media/alfonsoXIII/cruzMeritoNavalRojoRev.jpg" alt="Cruces del Mérito Naval reverso">
+    </div> 
+  </div>
+  
+  
+  
+  <!-- Scrip footer -->
+  <footer id="app-footer"></footer>
+  <script async src="../../footer.js"></script>  
+
+</body>
+</html>
