@@ -17,16 +17,13 @@ let appHeader = `
       </div>
     </div>
     <a href="../../contacto.html">Contacto</a>
-	
-	
-	<form id="searchForm" onsubmit="return searchMedals()">
-	  <input type="text" id="searchInput" placeholder="Buscar">
-	  <button type="submit">Buscar</button>
-	</form>
-
-	<div id="searchResults"></div>
-	
-	
+		<div class="search">
+			<form id="searchForm" onsubmit="return searchMedals()">
+			  <input type="text" id="searchInput" placeholder="Buscar">
+			  <button type="submit">Buscar</button>
+			</form>
+		</div>
+	</div>
   </nav>
 `;
 document.getElementById("app-header").innerHTML = appHeader;
