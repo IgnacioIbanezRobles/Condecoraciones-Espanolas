@@ -18,12 +18,13 @@ let appHeader = `
 		</div>
 		<a href="contacto.html">Contacto</a>
 		
-		<div class="search">
-			<form id="searchForm" onsubmit="return searchMedals()">
-			  <input type="text" id="searchInput" placeholder="Buscar">
-			  <button type="submit">Buscar</button>
-			</form>
-		</div>
+		
+		<form id="searchForm" onsubmit="return searchMedals()">
+		  <input type="text" id="searchInput" placeholder="Buscar">
+		  <button type="submit">Buscar</button>
+		</form>
+
+		<div id="searchResults"></div>
 	</div>
 	
 	
