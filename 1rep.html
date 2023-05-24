@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>1ª República</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Scrip header -->
+    <header id="app-header"></header>
+    <script async src="header.js"></script>  
+
+  <!--Flecha subir-->
+  <a href="" id="btn-scroll-top"> <img src="media/up-arrow.png" width="50" height="50"> </a>
+  <script>
+    window.addEventListener('scroll', function() {
+      var btnScrollTop = document.getElementById('btn-scroll-top');
+  
+      // Muestra u oculta el botón de acuerdo a la posición del scroll
+      if (window.pageYOffset > 300) {
+        btnScrollTop.style.display = 'block';
+      } else {
+        btnScrollTop.style.display = 'none';
+      }
+    });
+  
+    // Función para desplazarse hacia arriba al hacer clic en el botón
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</head>
+<body>
+  <div class="desc-card">
+    <h2>1ª República (1873-1874)</h2>
+
+      <p>
+        Al abdicar Amadeo I, se implanta la I República en España. Por Orden de 2 de octubre de 1873 y Orden de 20 de enero desaparecen las coronas reales (los lises ya habían desaparecido).
+   	  </p>
+
+   </div>
+  <div id="cartas" class="card-container">
+    <a href="medallas_html/1rep/medCuba.html">
+      <div class="card">
+        <img src="media/1rep/cubaAnv.jpg" alt="Medalla de Cuba">
+        <h3>Medalla de Cuba</h3>
+      </div>
+    </a>
+    <a href="medallas_html/1rep/carraca.html">
+      <div class="card">
+        <img src="media/1rep/carracaAnv.jpg" alt="Medalla del Arsenal de la Carraca">
+        <h3>Medalla del Arsenal de la Carraca</h3>
+      </div>
+    </a>
+    <a href="medallas_html/1rep/defBilbao.html">
+      <div class="card">
+        <img src="media/1rep/defBilbaoAnv.jpg" alt="Medalla de la defensa de Bilbao">
+        <h3>Medalla de la defensa de Bilbao</h3>
+      </div>
+    </a>
+    <a href="medallas_html/1rep/teruel.html">
+      <div class="card">
+        <img src="media/1rep/teruelAnv.jpg" alt="Medalla de Teruel">
+        <h3>Medalla de Teruel</h3>
+      </div>
+    </a>
+    <a href="medallas_html/1rep/puigcerda.html">
+      <div class="card">
+        <img src="media/1rep/puigcerdaAnv.jpg" alt="Medalla de Puigcerdá">
+        <h3>Medalla de Puigcerdá</h3>
+      </div>
+    </a>
+  </div>
+
+
+        <!-- Scrip footer -->
+      <footer id="app-footer"></footer>
+      <script async src="footer.js"></script>  
+  </body>
+</html>
