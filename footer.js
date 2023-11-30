@@ -4,7 +4,6 @@ let appFooter = `
 	<br>
 	Ignacio Ibáñez Robles
 	<br>
-	Agradecimientos a Carlos Lozano Liarte por su colaboración.
 </footer>
 `;
 
